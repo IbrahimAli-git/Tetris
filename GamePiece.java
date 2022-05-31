@@ -11,6 +11,38 @@ public class GamePiece {
         this.matrix = matrix;
     }
 
+    public void left(){
+
+    }
+
+    public void right(){
+
+    }
+
+    public void down(){
+
+    }
+
+    public void up(){
+
+    }
+
+    public void rotate(){
+
+    }
+
+    public void downMaximum(){
+
+    }
+
+    public boolean isCurrentPositionAvailable(){
+        return true;
+    }
+
+    public void land(){
+
+    }
+
     public int getX() {
         return x;
     }
@@ -23,3 +55,4 @@ public class GamePiece {
         return matrix;
     }
 }
+
