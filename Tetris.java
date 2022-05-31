@@ -1,36 +1,51 @@
 package com.codegym.task.task22.task2213;
 
-public class Tetris {
-    private Field field;
-    private GamePiece gamePiece;
-    static Tetris game;
+public class Field {
+    private int width;
+    private int height;
+    private int[][] matrix;
 
-    public static void main(String[] args) {
-        game = new Tetris();
-        game.run();
+    public Field(int width, int height) {
+        this.width = width;
+        this.height = height;
+        matrix = new int[height][width];
     }
 
-    public void run(){
+    public void print(){
+    }
+
+    public void removeFullLines(){
+    }
+
+    public Integer getValue(int x, int y){
+        return matrix[x][y];
+    }
+
+    public void setValue(int x, int y, int value){
 
     }
 
-    public void step(){
-
+    public int getWidth() {
+        return width;
     }
 
-    public Field getField() {
-        return field;
+    public void setWidth(int width) {
+        this.width = width;
     }
 
-    public void setField(Field field) {
-        this.field = field;
+    public int getHeight() {
+        return height;
     }
 
-    public GamePiece getGamePiece() {
-        return gamePiece;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
-    public void setGamePiece(GamePiece gamePiece) {
-        this.gamePiece = gamePiece;
+    public int[][] getMatrix() {
+        return matrix;
+    }
+
+    public void setMatrix(int[][] matrix) {
+        this.matrix = matrix;
     }
 }
